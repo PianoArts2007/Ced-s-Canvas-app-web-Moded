@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #888;
+}
+p {
+  font-size: 120%;
+  color: white;
+}
+#hex {
+  width: 20px;
+  border-radius: 20px;
+}
+#item5{
+  font-color: #ffffff;
+  margin-left: 500px;
+  background-color: #4d4d4d;
+  width:210px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: #222 5px 5px 5px;
+}
+#box{
+  width: 512px;
+  height: 512px;
+  background-color: #555;
+  border: 1px solid #4c566a;
+  margin: auto;
+  box-shadow: #222 5px 5px 5px;
+}
+#item{
+  background-color: #4C4C4C50;
+}
+button{
+  border-radius: 20px;
+  background-color: #222;
+  color: #ffffff;
+}
+#destination-over {
+  margin-left: 10px;
+}
+#delete_canvas {
+  margin-left: 10px;
+  font-family: Ubuntu Mono;
+}
+#item4 { /*!Unused*/
+  margin-left: 20px;
+  background-color: #686868;
+  height:20px;
+  width:800px;
+}
+#item1 {
+  margin-left: 990px;
+  background-color: rgb(77, 77, 77);
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: #222 5px 5px 5px;
+}
+#item2 { /*!Tools*/
+  background-color: #00000050;
+  width:730px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: #222 5px 5px 5px;
+}
+#filesItem {
+  background-color: rgb(80, 80, 80);
+  width:790px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: #222 5px 5px 5px;
+}
+#record {
+  background-color: #555;
+  width:150px;
+  text-align: center;
+  margin-left: 990px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: #222 5px 5px 5px;
+}
+#upload {
+  font-size: 20px;
+  font-family: Red Hat Display;
+}
+#save {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#save:hover {
+  background-color: #888;
+}
+#recstart {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#recstart:hover {
+  background-color: #888;
+}
+#stoprec {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#stoprec:hover {
+  background-color: #888;
+}
+#pencil {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#pencil:hover {
+  background-color: #888;
+}
+#crayon {
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#crayon:hover {
+  background-color: #888;
+}
+#destination-over {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#destination-over:hover {
+  background-color: #888;
+}
+#eraser {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+  margin-left: 10px;
+}
+#eraser:hover {
+  background-color: #888;
+}
+#delete_canvas {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#delete_canvas:hover {
+  background-color: #888;
+}
+#hex {
+  background-color:rgb(77, 77, 77) ;
+}
+#hex:hover {
+  background-color: #888;
+}
+#canvassize {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+#canvassize:hover {
+  background-color: #888;
+}
+#canvas_width {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-family: Fira Sans Condensed;
+}
+#canvas_height {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-family: Fira Sans Condensed;
+}
+#filename {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-family: Fira Sans Condensed;
+}
+input[type=file]::-webkit-file-upload-button {
+  border-radius: 20px;
+  background-color: #222;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-family: Ubuntu Mono;
+}
+input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #888;
+}
+#item:hover{
+  background-color: #5c5c5c50;
+}
+#videoextr {
+  font-family: Archivo Narrow;
+  color:rgb(17, 0, 255);
+}
+#videoextr:hover {
+  color:rgb(63, 49, 255);
+}

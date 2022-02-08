@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ced's canvas App</title>
+    <meta charset="utf-8">
+    <!-- icons source https://google.github.io/material-design-icons/#icon-font-for-the-web-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">-->
+    <link rel="stylesheet" href="src/style.css">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <!--icon imports-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div id="item"><!--the entire box of all of the boxes-->
+      <div id="filesItem">
+        <input id="upload" name="image" type="file"><!--<i class="material-icons">ios_share</i>-->
+        <input id="filename" value="image" placeholder="SetFileName">
+        <button id="save" style="width:100px;" onclick="save()">save</button>
+       </div>
+      <div id="item1"><!--draw tools size-->
+        <p>Line Size<input type="range" min="1" max="100" value="2" id="lineWidth"><span id="lineNum">5</span></p>
+        <p>alpha<input type="range" min="1" max="100" value="100" id="alpha"><span id="alphaNum">100</span></p>
+	    </div>
+      <br>
+      <div class="record" id="record"><!--recording section-->
+        <p>recording</p>
+        <button onclick="recstart();" id="recstart">start</button>
+        <button onclick="save_rec();" id="stoprec">stop</button>
+        <p><a href="#" id="downloadlink" style="display:none;" id="videoextr">download</a></p>
+      </div>
+      <div id="item2" class="rounded-circle"><!--tools section-->
+        <button id="pencil" onclick="tool(1)"><i class="material-icons">create</i>pen</button>
+        <button id="crayon" onclick="tool(2)"><i class="material-icons">colorize</i>writer</button>
+        <button id="destination-over" onclick="tool(3)"><i class="material-icons">edit</i>rough</button>
+        <button id="eraser" onclick="tool(4)"><i class="material-icons">rectangle</i>eraser</button>
+        <button id="delete_canvas" onclick="delete_canvas()"><i class="material-icons">disabled_by_default</i>clear all canvas</button>
+        <input id="hex" type="color" value="#000000">Choose a color
+	    </div>
+      <br>
+      <div id="item5"><!--canvas set-->
+        <p>canvas size</p>
+        <input style="width: 60px;" id="canvas_width" placeholder="width">
+        <input style="width: 60px;" id="canvas_height" placeholder="height">
+        <button onclick="canvas_size()" id="canvassize">set size</button> 
+      </div>
+    </div>
+    <br>
+    <div id="box"><!--Main canvas actions-->
+      <canvas class="layer1" id="draw"></canvas>
+      <canvas class="layer2" id="draw2"></canvas>
+      <script src="src/modules/jquery-1.11.0.min.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <pre class="lang:js decode:true " title="javascript-canvas" ><script src="src/script.js"></script></pre>
+  </body>
+</html>
